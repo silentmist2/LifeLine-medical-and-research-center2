@@ -1,0 +1,392 @@
+
+
+
+body{
+    margin: -0.01%; 
+    height: 380vh;
+    background: linear-gradient(-60deg, #aec6cf 52%, #F0EAD6);
+}
+
+.heading1{
+    width: 750px;
+    margin-top: 25px;
+    font-size: 30px;
+    font-weight: 550;
+    text-align: center;
+    position: relative;
+    left: 250px;
+    margin-left: 0px;
+}
+/* Home Navigation Styles */
+nav {
+    position: relative; /* Ensures the nav bar is positioned relative to its normal flow, used for positioning child elements */
+}
+
+nav a {
+    color: rgb(0, 0, 0); /* Sets the link color to black */
+    text-decoration: none; /* Removes the underline from the links */
+    margin-right: 20px; /* Adds spacing between the navigation links */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* Uses a system font stack for cross-device compatibility */
+    font-weight: 500; /* Sets a medium font weight for the links */
+}
+
+/* Hamburger Menu Icon */
+.menu-icon {
+    display: none; /* Hides the hamburger icon on larger screens */
+    font-size: 30px; /* Sets the size of the hamburger icon */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over the icon */
+    padding: 10px; /* Adds padding around the hamburger icon */
+}
+
+/* Hide the checkbox (used for toggling the menu) */
+#menu-toggle {
+    display: none; /* The checkbox is hidden but is still functional */
+}
+
+/* Regular menu displayed on large screens */
+.menu {
+    display: flex; /* Horizontally aligns the navigation items */
+    list-style-type: none; /* Removes the default bullet points from the list items */
+}
+
+.menu li {
+    margin-right: 20px; /* Adds space between each navigation item */
+}
+
+/* Hover effect for the links */
+nav a:hover {
+    color: rgb(51, 101, 207); /* Changes the color of the links when hovered */
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 480px) {
+    .menu {
+        display: none; /* Hides the navigation menu by default on small screens */
+        flex-direction: column; /* Changes the menu layout to vertical */
+        width: 100%; /* Makes the menu take the full width of the screen */
+        text-align: center; /* Centers the text within the menu */
+        background-color: #f5f5f5; /* Sets a light background color for the mobile menu */
+        position: fixed; /* Fixes the menu relative to the viewport */
+        top: 50px; /* Positions the menu 50px below the top */
+        left: 0; /* Aligns the menu to the left side */
+        max-height: calc(100vh - 50px); /* Ensures the menu fits within the screen height minus the 50px top offset */
+    }
+
+    #menu-toggle:checked + .menu-icon + .menu {
+        display: flex; /* Displays the menu when the checkbox (menu toggle) is checked */
+    }
+
+    .menu-icon {
+        display: block; /* Displays the hamburger icon on small screens */
+        margin-right: 10px; /* Moves the hamburger icon slightly to the left */
+    }
+
+    .menu li {
+        margin: 10px 0; /* Adds vertical spacing between menu items on small screens */
+    }
+}
+.hero{
+    background-image: url(https://img.freepik.com/premium-photo/busy-hospital-corridor-with-doctors-nurses-walking-long-exposure-motion-blur_601748-49748.jpg?w=826);
+    background-size: cover;
+    margin-top: -74px;
+}
+#herotxt{
+    font-weight: 800;
+    font-size: xx-large;
+    text-align: center;
+    padding: 190px;
+    
+}
+.heading2{
+    width: 300px;
+    position: relative;
+    left: 490px;
+}
+.headtxt{
+    left: 20px;
+}
+.headsect{
+    block-size: 105px;
+}
+#logo{
+    width: 350px;
+    height: 300px;
+    position: relative;
+    bottom: 166px;
+    block-size: 240px;
+}
+.section2{
+    margin-top: -60px;
+}
+.p1{
+    text-align: justify;
+    margin-left: 200px;
+    float: left;
+    position: absolute;
+    left: 50px;
+    font-weight: 500;
+    clear: both;
+    font-size: 22px;
+    width: 14em;
+    margin-top: 150px;
+    word-wrap: break-word;
+    line-height: 2rem;
+}
+.img1{
+    width: 300px;
+    height: auto;
+    float: right;
+    margin-right: 200px;
+}
+.section3{
+    font-weight: 500;
+    clear: both;
+    font-size: 22px;
+    width: 13em;
+    line-height: 2rem;
+    display: flex;
+    flex-direction: row;
+}
+
+#lochead{
+    font-weight: 800;
+    font-size: xx-large;
+}
+.location-container{
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 300px 300px;
+    grid-gap: 25px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.location{
+    position: relative;
+    overflow: hidden;
+}
+
+.location img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.description{
+    position: absolute;
+    top: 10;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f8f7f788;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3 ease;
+}
+
+.location:hover .description{
+    opacity: 1;
+}
+
+
+
+#expertise{
+    text-align: center;
+    position: relative;
+    left: 40px;
+    top: 50px;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    position: relative;
+    left: 150px;
+}
+#list1{
+    list-style-position: outside;
+    padding: 40px;
+    flex-direction: column;
+    list-style-type: circle;
+    margin: 0;
+    font-size: 22px;
+    font-weight: lighter;
+}
+#list2{
+    list-style-position: outside;
+    padding: 40px;
+    flex-direction: column;
+    list-style-type: circle;
+    margin: 0;
+    position: relative;
+    left: 280px;
+    bottom: 209px;
+    font-size: 22px;
+    font-weight: lighter;
+}
+.dacolumn{
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+
+
+
+
+.footer{
+    background-color: #616569;
+}
+.footer-container{
+    display: flex;
+}
+.quicklink{
+    margin: -20px;
+    padding-bottom: 0;
+}
+.footer-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    padding: 0;
+    justify-content: space-evenly;
+}
+.listcolumn{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-align: start;
+    margin-top: -5px;
+}
+#mail{
+    padding-top: 50px;
+}
+.footer-list{
+    list-style-position: inside;
+    list-style-type: circle;
+    display: inline;
+    margin-right: 10px;
+}
+#unorderlistfoot{
+    list-style: none;
+    display: inline-block;
+}
+
+/* Mobile Styles for screens 600px wide or less */
+@media screen and (max-width: 600px) {
+
+    .heading1 {
+      width: 100%;
+      font-size: 24px;
+      left: 0;
+      text-align: center;
+      position: relative;
+    }
+  
+    .navbar ul {
+      text-align: left;
+    }
+  
+    .navbar li {
+      display: block;
+      text-align: left;
+    }
+  
+    .hero {
+      background-size: cover;
+      padding: 100px 20px;
+    }
+  
+    #herotxt {
+      font-size: large;
+      padding: 100px 10px;
+    }
+  
+    .section2 {
+      margin-top: 0;
+    }
+  
+    .p1 {
+      font-size: 18px;
+      margin-left: 10px;
+      left: 0;
+      width: 100%;
+      position: relative;
+    }
+  
+    .img1 {
+      width: 100%;
+      height: auto;
+      margin-right: 0;
+      float: none;
+      margin-top: 10px;
+    }
+  
+    .section3 {
+      display: block;
+      width: 100%;
+      font-size: 18px;
+    }
+  
+    #expertise {
+      font-size: 18px;
+      top: 20px;
+      left: 0;
+    }
+  
+    .column {
+      padding: 10px;
+      left: 0;
+      position: relative;
+    }
+  
+    #list1, #list2 {
+      padding: 10px;
+      font-size: 18px;
+      position: relative;
+      left: 0;
+    }
+  
+    #list2 {
+      bottom: 0;
+    }
+  
+    .location-container {
+      display: block;
+      width: 100%;
+    }
+  
+    .location {
+      margin-bottom: 20px;
+    }
+  
+    .location img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .description {
+      font-size: 16px;
+    }
+  
+    .footer-container {
+      grid-template-columns: 1fr;
+    }
+  
+    .footer-list {
+      margin: 5px 0;
+    }
+  
+    #mail {
+      padding-top: 20px;
+    }
+
+    .heading2{
+        position: relative;
+        left: 56px;
+    }
+  }
+
